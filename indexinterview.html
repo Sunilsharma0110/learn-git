@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    
+</body>
+
+<script>
+//     let arry1 = [20,10,15,50,40,12,45]
+// let string1 = "my name is sunil"
+
+let arr = [2, 5, 5, 6, 8, 7, 9, 7];
+
+
+
+function removeduplicates(val){
+
+    let uniqitems = []
+
+    for(let i = 0;  i < val.length ; i++)
+
+    if(uniqitems.indexOf(val[i]) === -1){
+        uniqitems.push(val[i])
+    }
+
+    return uniqitems
+
+}
+
+document.write(removeduplicates(arr))
+// // Create a Set to remove duplicates
+// let result = [...new Set(arr)]
+
+// // Convert the Set back to an array (optional) and display it
+// document.write(result.join(" "));
+
+
+// function largword(val){
+//     let words = val.split(" ");
+
+//    let result =  words.sort((a, b) => b.length  - a.length )
+
+//    return result[0] || ""
+
+
+// }
+
+
+// document.write(largword(string1))
+
+// function largestword(val){
+
+//     let words = val.split(" ");
+//     let largest = "";
+
+//     for(let word of words ){
+
+// if(word.length > largest.length){
+
+//     largest = word
+
+
+// }
+
+//     }
+
+//     return largest
+
+// }
+// document.write(largestword(string1))
+
+//     function firstlarge(val){
+//         let largenumber = val[0]
+
+//         for(let i = 1; i < val.length ; i++){
+
+// if(val[i] > largenumber){
+//     largenumber = val[i]
+// }
+
+//         }
+//         return largenumber
+
+//     }
+
+//  document.write(   firstlarge(arry1))
+
+
+
+// function secondlargenumber(val){
+
+//     let result = val.sort((a, b)=> b - a)
+    
+//     document.write(result[0])
+// }
+// secondlargenumber(arry1)
+
+
+
+</script>
+</html>
